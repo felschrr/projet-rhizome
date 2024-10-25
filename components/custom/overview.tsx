@@ -24,7 +24,7 @@ export const Overview = () => {
                 </h2>
                 <p>
                     Ce chatbot IA unique vous transporte dans un futur marqué
-                    par les conséquences du réchauffement climatique. L'IA
+                    par les conséquences du réchauffement climatique. L&apos;IA
                     incarne un personnage vivant dans ce futur dystopique,
                     confronté à des catastrophes naturelles causées par la
                     pollution et le changement climatique.
@@ -51,8 +51,8 @@ export const Overview = () => {
                     </li>
                 </ul>
                 <p>
-                    Le chatbot utilise l'API Gemini de Google et est construit
-                    avec Next.js et l'AI SDK de Vercel. Il emploie la fonction{" "}
+                    Le chatbot utilise l&apos;API Gemini de Google et est construit
+                    avec Next.js et l&apos;AI SDK de Vercel. Il emploie la fonction{" "}
                     <code className="rounded-sm bg-muted-foreground/15 px-1.5 py-0.5">
                         streamText
                     </code>{" "}

@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
+
 import { Chat } from "@/components/custom/chat";
-import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/custom/theme-toggle";
+import { Button } from "@/components/ui/button";
 
 export default function Page() {
     const [key, setKey] = useState(0);

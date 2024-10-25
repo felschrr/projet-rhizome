@@ -1,6 +1,8 @@
 import React from "react";
+
 import { ThemeToggle } from "@/components/custom/theme-toggle";
-const navbar = () => {
+
+const Navbar = () => {
     return (
         <>
             <ThemeToggle />
@@ -8,4 +10,4 @@ const navbar = () => {
     );
 };
 
-export default navbar;
+export default Navbar;
