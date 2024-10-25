@@ -25,7 +25,6 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Navbar /> */}
           <Toaster position="top-center" />
           {children}
         </ThemeProvider>
