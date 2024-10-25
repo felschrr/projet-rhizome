@@ -4,7 +4,6 @@ import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/custom/theme-provider";
 
 import "./globals.css";
-import Navbar from "@/components/custom/Navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gemini.vercel.ai"),
@@ -26,7 +25,6 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Navbar /> */}
           <Toaster position="top-center" />
           {children}
         </ThemeProvider>
