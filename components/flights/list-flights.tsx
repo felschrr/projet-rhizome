@@ -74,15 +74,11 @@ const SAMPLE = {
 };
 
 export function ListFlights({
-  chatId,
   results = SAMPLE,
 }: {
-  chatId: string;
   results?: typeof SAMPLE;
 }) {
   const { append } = useChat({
-    id: chatId,
-    body: { id: chatId },
     maxSteps: 5,
   });
 

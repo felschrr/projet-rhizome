@@ -8,8 +8,6 @@ import {
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-import { Chat } from "@/db/schema";
-
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
@@ -41,14 +39,6 @@ export function getLocalStorage(key: string) {
     return JSON.parse(localStorage.getItem(key) || "[]");
   }
   return [];
-}
-
-export function generateUUID(): string {
-  return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g, function (c) {
-    const r = (Math.random() * 16) | 0;
-    const v = c === "x" ? r : (r & 0x3) | 0x8;
-    return v.toString(16);
-  });
 }
 
 function addToolMessageToChat({
@@ -124,15 +114,4 @@ export function convertToUIMessages(
 
     return chatMessages;
   }, []);
-}
-
-export function getTitleFromChat(chat: Chat) {
-  const messages = convertToUIMessages(chat.messages as Array<CoreMessage>);
-  const firstMessage = messages[0];
-
-  if (!firstMessage) {
-    return "Untitled";
-  }
-
-  return firstMessage.content;
 }

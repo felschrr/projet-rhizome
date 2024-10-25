@@ -11,20 +11,15 @@ import { MultimodalInput } from "./multimodal-input";
 import { Overview } from "./overview";
 
 export function Chat({
-  id,
   initialMessages,
 }: {
-  id: string;
   initialMessages: Array<Message>;
 }) {
   const { messages, handleSubmit, input, setInput, append, isLoading, stop } =
     useChat({
-      id,
-      body: { id },
       initialMessages,
-      maxSteps: 10,
       onFinish: () => {
-        window.history.replaceState({}, "", `/chat/${id}`);
+        // Supprimez la mise à jour de l'historique du navigateur
       },
     });
 
@@ -45,7 +40,6 @@ export function Chat({
           {messages.map((message) => (
             <PreviewMessage
               key={message.id}
-              chatId={id}
               role={message.role}
               content={message.content}
               attachments={message.experimental_attachments}

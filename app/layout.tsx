@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 import { Toaster } from "sonner";
 
-import { Navbar } from "@/components/custom/navbar";
 import { ThemeProvider } from "@/components/custom/theme-provider";
 
 import "./globals.css";
+import Navbar from "@/components/custom/Navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gemini.vercel.ai"),
   title: "Projet Rhizome",
-  description: "Next.js chatbot template using the AI SDK and Gemini.",
+  description: "Chatbot en Next.js basé sur Gemini.",
 };
 
 export default async function RootLayout({
@@ -26,8 +26,8 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {/* <Navbar /> */}
           <Toaster position="top-center" />
-          <Navbar />
           {children}
         </ThemeProvider>
       </body>
