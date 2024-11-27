@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {},
-  images: {
-    remotePatterns: [],
-  },
+    experimental: {},
+    devIndicators: {
+        appIsrStatus: false,
+    },
+    images: {
+        remotePatterns: [],
+    },
 };
 
 export default nextConfig;
