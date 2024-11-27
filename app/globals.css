@@ -20,9 +20,19 @@
     .text-balance {
         text-wrap: balance;
     }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
 }
 
-:root  {
+:root {
     --background: 147 0% 95%;
     --foreground: 147 0% 10%;
     --card: 147 0% 90%;
@@ -43,8 +53,8 @@
     --input: 147 20% 50%;
     --ring: 147 93.1% 28.4%;
     --radius: 0.5rem;
-  }
-  .dark  {
+}
+.dark {
     --background: 147 10% 10%;
     --foreground: 147 0% 90%;
     --card: 147 0% 10%;
@@ -65,7 +75,7 @@
     --input: 147 20% 50%;
     --ring: 147 93.1% 28.4%;
     --radius: 0.5rem;
-  }
+}
 
 @layer base {
     * {
