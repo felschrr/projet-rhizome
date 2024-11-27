@@ -1,6 +1,5 @@
 import { google } from "@ai-sdk/google";
 import { experimental_wrapLanguageModel as wrapLanguageModel } from "ai";
-
 import { customMiddleware } from "./custom-middleware";
 
 export const geminiProModel = wrapLanguageModel({
@@ -9,6 +8,6 @@ export const geminiProModel = wrapLanguageModel({
 });
 
 export const geminiFlashModel = wrapLanguageModel({
-  model: google("gemini-1.5-flash-002"),
+  model: google("gemini-1.5-flash-8b-exp-0924"),
   middleware: customMiddleware,
 });
