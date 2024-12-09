@@ -5,7 +5,13 @@ const nextConfig = {
         appIsrStatus: false,
     },
     images: {
-        remotePatterns: [],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+                pathname: '/**',
+            },
+        ],
     },
 };
 
