@@ -1,7 +1,9 @@
-import React from 'react';
 import { Bot } from 'lucide-react';
-import { BackgroundEffect } from './BackgroundEffect';
+import React from 'react';
+
 import { Button } from '@/components/ui/button';
+
+import { BackgroundEffect } from './BackgroundEffect';
 
 export function Hero() {
   return (
@@ -11,14 +13,14 @@ export function Hero() {
         <div className="mx-auto max-w-2xl text-center">
           <div className="flex justify-center mb-8">
             <div className="rounded-full bg-primary/20 p-3 shadow-lg">
-              <Bot className="h-8 w-8 text-primary" />
+              <Bot className="size-8 text-primary" />
             </div>
           </div>
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/80">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl bg-clip-text bg-gradient-to-r from-primary to-primary/80">
             Project Rhizome
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            An AI-powered conversation about our planet's future, powered by Gemini and built with Next.js
+            An AI-powered conversation about our planet&apos;s future, powered by Gemini and built with Next.js
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Button asChild size="lg">

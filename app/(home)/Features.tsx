@@ -1,5 +1,6 @@
-import React from 'react';
 import { MessageSquare, Moon, Sun, Smartphone, Leaf, Clock } from 'lucide-react';
+import React from 'react';
+
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
 const features = [
@@ -52,8 +53,8 @@ export function Features() {
             {features.map((feature) => (
               <Card key={feature.name}>
                 <CardHeader>
-                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-                    <feature.icon className="h-6 w-6 text-primary-foreground" />
+                  <div className="flex size-10 items-center justify-center rounded-lg bg-primary">
+                    <feature.icon className="size-6 text-primary-foreground" />
                   </div>
                   <CardTitle className="mt-4">{feature.name}</CardTitle>
                   <CardDescription>{feature.description}</CardDescription>

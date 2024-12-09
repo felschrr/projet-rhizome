@@ -11,7 +11,7 @@ export function BackgroundEffect() {
           }}
         />
       </div>
-      <div className="absolute inset-x-0 top-[25%] -z-10 transform-gpu overflow-hidden blur-3xl">
+      <div className="absolute inset-x-0 top-1/4 -z-10 transform-gpu overflow-hidden blur-3xl">
         <div 
           className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-b from-[#34d399] to-[#68c374] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
           style={{

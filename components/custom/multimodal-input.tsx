@@ -97,7 +97,7 @@ export function MultimodalInput({
         if (width && width > 768) {
             textareaRef.current?.focus();
         }
-    }, [ handleSubmit, width]);
+    }, [width]);
 
     // const uploadFile = async (file: File) => {
     //     const formData = new FormData();
