@@ -1,6 +1,6 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Metadata } from "next";
 import { Toaster } from "sonner";
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 import { ThemeProvider } from "@/components/custom/theme-provider";
 
