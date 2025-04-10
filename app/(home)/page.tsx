@@ -4,16 +4,20 @@ import { About } from "./About";
 import { Features } from "./Features";
 import { Header } from "./Header";
 import { Hero } from "./Hero";
+// import { Contact } from "./Contact";
+import { Footer } from "./Footer";
+
 
 const page = () => {
     return (
         <>
-          <Header/>
+        <Header/>
             <main className="bg-background text-foreground">
                 <Hero />
                 <Features />
                 <About />
             </main>
+        <Footer/>
         </>
     );
 };
