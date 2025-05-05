@@ -12,39 +12,49 @@ export function Header() {
                 <div className="flex h-16 items-center justify-between">
                     <div className="flex items-center gap-2">
                         <a href="/" className="flex items-center gap-2">
-                            <Image src="/images/Logo.svg" alt="Logo" width={120} height={120} />
+                            <Image
+                                src="/images/Logo.svg"
+                                alt="Logo"
+                                width={120}
+                                height={120}
+                            />
                         </a>
                     </div>
-                    <div >
+                    <div>
                         <ul className="flex items-center justify-center gap-4">
                             <li>
                                 {/* Réalité Virtuelle */}
                                 <Button asChild variant="ghost">
-                                    <a href="/realite-virtuelle" className="flex items-center gap-2">
+                                    <a
+                                        href="/realite-virtuelle"
+                                        className="flex items-center gap-2"
+                                    >
                                         Réalité Virtuelle
                                     </a>
                                 </Button>
-
                             </li>
                             <li>
                                 {/* Contact */}
                                 <Button asChild variant="ghost">
-                                    <a href="/contact" className="flex items-center gap-2">
+                                    <a
+                                        href="/contact"
+                                        className="flex items-center gap-2"
+                                    >
                                         Contact
                                     </a>
                                 </Button>
-
                             </li>
                             <li>
                                 <Button asChild variant="default">
-                                    <a href="/chat" className="flex items-center gap-2">
+                                    <a
+                                        href="/chat"
+                                        className="flex items-center gap-2"
+                                    >
                                         Start Chat
                                     </a>
                                 </Button>
                             </li>
-                            <li>
-                                {/* <ThemeToggle /> */}
-                            </li>
+                            <li>{/* <ThemeToggle /> */}</li>
                         </ul>
                     </div>
                 </div>
