@@ -25,21 +25,24 @@ const EcoVRPage  = () => {
                         Your browser does not support the video tag.
                     </video>
                 </div>
+                <div className="mx-auto   border-2 border-white  p-2 flex justify-center items-center w-44   ">
+                    <button type="submit" className="border-2 border-white text-white  p-2 hover:bg-white hover:text-black">Télécharger le jeu</button>
+                </div>
             </div>
         </section>
         <section className="px-10 pb-20">
             <h4>ECOCALYPSE</h4>
             <p>La planète a besoin de vous. Serez-vous à la hauteur ?</p>
-            <h4>À propos du jeu</h4>
+            <h4 className="py-2">À propos du jeu</h4>
             <p>ECOCALYPSE est une expérience immersive mêlant réalité virtuelle et intelligence artificielle, où chaque décision compte pour sauver un monde en crise écologique. Découvrez un avenir marqué par le dérèglement climatique et engagez-vous dans une quête interactive pour changer le cours des choses.</p>
-            <h4>Vos objectifs dans ECOCALYPSE :</h4>
+            <h4 className="py-2">Vos objectifs dans ECOCALYPSE :</h4>
             <ul>
                 <li>Ramasser et recycler des déchets dans des environnements pollués</li>
                 <li>Sauver des animaux menacés et restaurer leurs habitats</li>
                 <li>Échanger avec un chatbot éducatif venu d’un futur dystopique pour apprendre à agir concrètement</li>
                 <li>Observer vos efforts transformer la planète et rendre l’espoir à la nature</li>
             </ul>
-            <h4>Caractéristiques principales :</h4>
+            <h4 className="py-2">Caractéristiques principales :</h4>
             <ul>
                 <li>Expérience VR immersive : Explorez des décors 3D hyper réalistes qui illustrent les dégâts du dérèglement climatique</li>
                 <li>Interaction éducative avec IA : Découvrez des conseils pratiques grâce à un chatbot engageant et accessible</li>
