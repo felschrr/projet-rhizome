@@ -1,68 +1,68 @@
-<h1 align="center">Projet Rhizome : Chatbot IA sur le Réchauffement Climatique</h1>
+<h1 align="center">Project Rhizome: AI Chatbot on Climate Change</h1>
 
 <p align="center">
-  Un chatbot intelligent basé sur Gemini et Next.js pour sensibiliser au changement climatique
+  An intelligent chatbot based on Gemini and Next.js to raise awareness about climate change
 </p>
 
-## À propos du projet
+## About the Project
 
-Le Projet Rhizome est une application de chatbot qui utilise l'API Gemini de Google pour générer des réponses intelligentes sur le thème du réchauffement climatique. Cette application est construite avec Next.js et offre une interface utilisateur intuitive pour interagir avec l'IA, qui adopte le rôle d'un personnage du futur vivant les conséquences du changement climatique.
+Project Rhizome is a chatbot application that uses Google's Gemini API to generate intelligent responses on the theme of climate change. This application is built with Next.js and offers an intuitive user interface to interact with the AI, which takes on the role of a character from the future experiencing the consequences of climate change.
 
-## Fonctionnalités principales
+## Main Features
 
-- Interface de chat en temps réel
-- Personnage IA du futur partageant son expérience du changement climatique
-- Conseils pratiques pour lutter contre le réchauffement climatique
-- Comparaisons entre le passé (notre présent) et le futur (vécu par l'IA)
-- Support pour le mode sombre/clair
-- Conception responsive pour une utilisation sur desktop et mobile
+- Real-time chat interface
+- Future AI character sharing their experience of climate change
+- Practical advice to combat climate change
+- Comparisons between the past (our present) and the future (experienced by the AI)
+- Support for dark/light mode
+- Responsive design for use on desktop and mobile
 
-## Prérequis
+## Prerequisites
 
-- Node.js (version 14 ou supérieure)
-- Une clé API Gemini valide
+- Node.js (version 14 or higher)
+- A valid Gemini API key
 
 ## Installation
 
 ```
-1. Clonez le dépôt :
+1. Clone the repository:
 ```
 
-   git clone https://github.com/votre-nom-utilisateur/projet-rhizome.git
+   git clone https://github.com/your-username/project-rhizome.git
 
 ```
 
 ```
 
-2. Installez les dépendances :
+2. Install the dependencies:
 
    ```
-   cd projet-rhizome
+   cd project-rhizome
    npm install
    ```
 
    ```
 
    ```
-3. Créez un fichier `.env.local` à la racine du projet et ajoutez votre clé API Gemini :
+3. Create a `.env.local` file at the root of the project and add your Gemini API key:
 
    ```
-   GOOGLE_API_KEY=votre_clé_api_ici
+   GOOGLE_API_KEY=your_api_key_here
    ```
 
    ```
 
    ```
-4. Lancez le serveur de développement :
+4. Start the development server:
 
    ```
    npm run dev
    ```
-5. Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir l'application.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-## Utilisation
+## Usage
 
-Interagissez avec le chatbot pour :
+Interact with the chatbot to:
 
-- Découvrir les conséquences futures du changement climatique
-- Obtenir des conseils sur la réduction de votre empreinte carbone
+- Discover the future consequences of climate change
+- Get advice on reducing your carbon footprint
