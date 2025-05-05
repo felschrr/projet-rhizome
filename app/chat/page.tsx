@@ -20,7 +20,7 @@ export default function Page() {
             <div className="flex justify-between items-center m-4">
                 <BackButton />
                 <div className="flex items-center justify-center gap-4">
-                    <ThemeToggle />
+                    {/* <ThemeToggle /> */}
                     <Button onClick={handleResetChat} className=" self-end">
                         Nouveau chat
                     </Button>
