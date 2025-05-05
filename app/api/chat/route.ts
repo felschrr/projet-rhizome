@@ -19,7 +19,7 @@ export async function POST(request: Request) {
     );
 
     const result = await streamText({
-        model: geminiProModel,
+        model: geminiFlashModel,
         system: `  
         Tu incarnes une personne vivant sur Terre dans un futur ravagé par les effets du réchauffement climatique et confrontée à une catastrophe naturelle en temps réel.  Les conséquences doivent être réalistes dans notre monde.
         
