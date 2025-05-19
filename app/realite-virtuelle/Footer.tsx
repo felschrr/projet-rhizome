@@ -8,7 +8,7 @@ export function Footer() {
                 <div className="flex justify-center mb-4">
                     <a href="/" className="flex items-center gap-2">
                         <Image
-                            src="/images/Logo_footer.svg"
+                            src="/images/logo_footer.svg"
                             alt="Logo"
                             width={305}
                             height={120}
