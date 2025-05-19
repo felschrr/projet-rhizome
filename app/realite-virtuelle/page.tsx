@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
@@ -49,11 +48,14 @@ const EcoVRPage = () => {
                             </p>
                             <div className="flex justify-center">
                                 <a 
-                                    href="/lien-de-telechargement" // Remplacez par votre lien réel
-                                    className="bg-white text-black px-6 py-2 rounded hover:bg-gray-200 transition"
+                                    href="/lien-de-telechargement"
+                                    className="bg-white text-black px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition flex items-center gap-2"
                                     onClick={closePopup}
                                 >
-                                    Compris, télécharger
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                                    </svg>
+                                    Télécharger maintenant
                                 </a>
                             </div>
                         </div>
@@ -126,12 +128,20 @@ const EcoVRPage = () => {
                                 HTML5.
                             </video>
                         </div>
-                        <div className="flex justify-center">
+                        
+                        {/* Bouton de téléchargement amélioré */}
+                        <div className="flex justify-center mt-12">
                             <button 
                                 onClick={handleDownloadClick}
-                                className="group border-2 border-white px-8 py-3 text-lg font-medium hover:bg-white hover:text-black transition duration-300"
+                                className="relative overflow-hidden group bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-10 py-5 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                             >
-                                Télécharger ECOCALYPSE
+                                <span className="relative z-10 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                                    </svg>
+                                    TÉLÉCHARGER ECOCALYPSE
+                                </span>
+                                <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
                             </button>
                         </div>
                     </div>

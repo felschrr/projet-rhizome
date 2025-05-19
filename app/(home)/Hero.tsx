@@ -68,7 +68,7 @@ export function Hero() {
                     <div className="flex justify-start">
                         <div className="group border-2 border-white p-1 hover:bg-white transition duration-300">
                             <a
-                                href="/chat"
+                                href="/realite-virtuelle"
                                 className="block border-2 border-white text-white px-6 py-3 text-lg group-hover:text-black group-hover:border-black text-center font-medium"
                             >
                                 Télécharger l&apos;expérience
@@ -77,35 +77,55 @@ export function Hero() {
                     </div>
                 </div>
             </section>
-
-            {/* Section Événement */}
-            <section className="min-h-screen px-4 sm:px-6 lg:px-20 py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-                <div className="order-2 lg:order-1">
+            {/* Section Video Presentation du projet */}
+            <section className="min-h-screen px-4 sm:px-6 lg:px-20 py-20 flex flex-col justify-center  bg-opacity-/50 relative">
+                <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold pb-6 leading-tight">
-                        Rencontrez-nous à la Fête de la Science
+                        Découvrez notre projet
                     </h2>
                     <p className="text-lg md:text-xl lg:text-2xl pb-10 leading-relaxed">
-                        Venez échanger avec notre équipe les 10 et 11 octobre
-                        2025 à Montbéliard. Nous présenterons une démo exclusive
-                        de notre technologie et animerons des ateliers
-                        interactifs sur les enjeux climatiques et technologiques
-                        de demain.
+                        Plongez dans notre projet à travers cette vidéo
+                        captivante. Découvrez comment nous transformons la
+                        sensibilisation climatique en une expérience immersive et
+                        engageante.
+                    </p>
+                        <div className="w-full lg:w-2/4 mx-auto rounded-xl overflow-hidden shadow-2xl mb-10">
+                            <video controls className="w-full aspect-video">
+                                <source
+                                    src="/videos/eco_video.mp4"
+                                    type="video/mp4"
+                                />
+                                Votre navigateur ne supporte pas les vidéos
+                                HTML5.
+                            </video>
+                        </div>
+                </div>
+            </section>
+    
+            {/* Section Événement */}
+            <section className="min-h-screen px-4 sm:px-6 lg:px-20 py-20 grid grid-cols-1 lg:grid-cols-2 bg-black gap-10 items-center">
+                <div className="order-2 lg:order-1">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold pb-6 leading-tight">
+                        Rencontrez-nous à au Le 19 Crac Montbéliard
+                    </h2>
+                    <p className="text-lg md:text-xl lg:text-2xl pb-10 leading-relaxed">
+                        Participez à notre événement le 11 juin à 14h au 19 Crac Montbéliard ! Venez rencontrer notre équipe, découvrir notre projet et tester notre technologie de réalité virtuelle immersive. Nous échangerons ensemble sur l’avenir de notre planète et l’impact du changement climatique sur nos vies. Saisissez cette opportunité unique de vous engager concrètement pour un futur durable. Nous vous attendons nombreux à l’adresse suivante : 19 AV des Alliés, 25200 Montbéliard.
                     </p>
                     <div className="group border-2 border-white p-1 hover:bg-white transition duration-300 inline-block">
                         <a
-                            href="/chat"
+                            href="https://le19crac.com/"
                             className="block border-2 border-white text-white px-6 py-3 text-lg group-hover:text-black group-hover:border-black text-center font-medium"
                         >
-                            Programme complet
+                            le Crac 19 Montbéliard
                         </a>
                     </div>
                 </div>
 
                 <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
                     <Image
-                        src="/images/fetescience.png"
+                        src="/images/le-19-crac-montbeliard.webp"
                         alt="Fête de la Science Montbéliard"
-                        className="w-2/4 max-w-md lg:max-w-lg xl:max-w-xl h-auto rounded-lg shadow-xl"
+                        className="w-full max-w-md lg:max-w-lg xl:max-w-xl h-auto rounded-lg shadow-xl"
                         width={200}
                         height={200}
                     />
