@@ -1,14 +1,65 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
 const EcoVRPage = () => {
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handleDownloadClick = () => {
+        setShowPopup(true);
+    };
+
+    const closePopup = () => {
+        setShowPopup(false);
+    };
+
     return (
         <>
             <Header />
             <main className="bg-background text-foreground">
+                {/* Popup VR Warning */}
+                {showPopup && (
+                    <div 
+                        className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+                        onClick={closePopup}
+                    >
+                        <div 
+                            className="bg-[#191919] border-2 border-white rounded-lg max-w-md w-full p-6 relative"
+                            onClick={(e) => e.stopPropagation()}
+                        >
+                            <button 
+                                onClick={closePopup}
+                                className="absolute top-4 right-4 text-white hover:text-gray-300"
+                                aria-label="Fermer"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                            <h3 className="text-2xl font-bold mb-4">Information importante</h3>
+                            <p className="mb-4">
+                                ECOCALYPSE est une expérience conçue spécifiquement pour les casques de réalité virtuelle.
+                            </p>
+                            <p className="mb-6">
+                                Pour une expérience optimale, nous recommandons l&apos;utilisation d&apos;un casque VR compatible avec SteamVR ou Oculus.
+                            </p>
+                            <div className="flex justify-center">
+                                <a 
+                                    href="/lien-de-telechargement" // Remplacez par votre lien réel
+                                    className="bg-white text-black px-6 py-2 rounded hover:bg-gray-200 transition"
+                                    onClick={closePopup}
+                                >
+                                    Compris, télécharger
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
                 <section className="px-4 sm:px-6 lg:px-20 py-16 md:py-24 lg:py-32 max-w-7xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
                         L&apos;Avenir Écologique Entre Vos Mains
@@ -19,7 +70,7 @@ const EcoVRPage = () => {
                         sensibiliser au dérèglement climatique. Dans ECOCALYPSE,
                         vous devrez ramasser des déchets, sauver des animaux et
                         restaurer la nature, tout en dialoguant avec un chatbot
-                        éducatif venu d’un futur dystopique. Vos actions
+                        éducatif venu d&apos;un futur dystopique. Vos actions
                         transformeront les paysages dévastés en écosystèmes
                         vibrants de vie. Êtes-vous prêt à relever le défi et à
                         devenir un acteur du changement ?
@@ -76,7 +127,10 @@ const EcoVRPage = () => {
                             </video>
                         </div>
                         <div className="flex justify-center">
-                            <button className="group border-2 border-white px-8 py-3 text-lg font-medium hover:bg-white hover:text-black transition duration-300">
+                            <button 
+                                onClick={handleDownloadClick}
+                                className="group border-2 border-white px-8 py-3 text-lg font-medium hover:bg-white hover:text-black transition duration-300"
+                            >
                                 Télécharger ECOCALYPSE
                             </button>
                         </div>
