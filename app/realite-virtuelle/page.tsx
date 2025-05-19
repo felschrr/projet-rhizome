@@ -30,7 +30,7 @@ const EcoVRPage = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
                             <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                                 <Image
-                                    src="/images/eco1.png"
+                                    src="/images/vue_mer.png"
                                     alt="Environnement pollué"
                                     className="size-full object-cover"
                                     width={500}
@@ -39,7 +39,7 @@ const EcoVRPage = () => {
                             </div>
                             <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                                 <Image
-                                    src="/images/eco2.png"
+                                    src="/images/vue_ar.png"
                                     alt="Nettoyage des déchets"
                                     className="size-full object-cover"
                                     width={500}
