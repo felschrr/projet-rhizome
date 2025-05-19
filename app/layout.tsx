@@ -8,7 +8,26 @@ import "./globals.css";
 
 export const metadata: Metadata = {
     title: "Projet Rhizome",
-    description: "Chatbot en Next.js basé sur Gemini.",
+    description: "Chatbot intelligent sur le climat et l'environnement avec un jeu immersif en VR.",
+    icons: {
+        icon: "/images/Logo.png",
+        shortcut: "/images/Logo.png",
+        apple: "/images/Logo.png",
+    },
+    openGraph: {
+        title: "Projet Rhizome",
+        description: "Chatbot intelligent sur le climat et l'environnement avec un jeu immersif en VR.",
+        url: "https://projet-rhizome.vercel.app/",
+        siteName: "Projet Rhizome",
+        images: [
+            {
+                url: "/images/Logo.png",
+                width: 800,
+                height: 600,
+            },
+        ],
+    },
+    
 };
 
 export default async function RootLayout({

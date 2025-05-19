@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 import { Footer } from "./Footer";
-import { Header } from "./Header"; 
+import { Header } from "./Header";
 
 
 const ContactPage = () => {
@@ -12,18 +12,19 @@ const ContactPage = () => {
         message: "",
         agree: false
     });
-    const [submitStatus, setSubmitStatus] = useState(null);
+    const [submitStatus, setSubmitStatus] = useState<{ success: boolean; message: string } | null>(null);
     const [isSubmitting, setIsSubmitting] = useState(false);
 
-    const handleChange = (e) => {
-        const { name, value, type, checked } = e.target;
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const target = e.target as HTMLInputElement | HTMLTextAreaElement;
+        const { name, value, type } = target;
         setFormData(prev => ({
             ...prev,
-            [name]: type === 'checkbox' ? checked : value
+            [name]: type === 'checkbox' ? (target as HTMLInputElement).checked : value
         }));
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         
         if (!formData.agree) {
@@ -62,7 +63,7 @@ const ContactPage = () => {
     };
 
     return (
-        <>  
+        <> 
             <Header />  
             <main className="bg-background text-foreground min-h-screen">
                 <section className="px-4 sm:px-6 lg:px-20 py-12 md:py-20">
@@ -78,7 +79,11 @@ const ContactPage = () => {
                                 <h3 className="text-2xl font-semibold text-white">NOUS CONTACTER</h3>
                             </div>
                             
-
+                            {submitStatus && (
+                                <p className={`mb-6 p-4 rounded-lg ${submitStatus.success ? 'bg-green-900 text-green-100' : 'bg-red-900 text-red-100'}`}>
+                                    {submitStatus.message}
+                                </p>
+                            )}
                             
                             <form 
                                 onSubmit={handleSubmit}
@@ -156,11 +161,6 @@ const ContactPage = () => {
                                     </button>
                                 </div>
                             </form>
-                            {submitStatus && (
-                                <div className={`mb-6 p-4 rounded-lg ${submitStatus.success ? 'bg-green-900 text-green-100' : 'bg-red-900 text-red-100'}`}>
-                                    {submitStatus.message}
-                                </div>
-                            )}
                         </div>
                     </div>
                 </section>
