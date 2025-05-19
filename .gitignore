@@ -40,3 +40,4 @@ package-lock.json
 .vscode
 .env*.local
 .env.example
+certificates
