@@ -28,7 +28,7 @@ Project Rhizome is a chatbot application that uses Google's Gemini API to genera
 1. Clone the repository:
 ```
 
-   git clone https://github.com/your-username/project-rhizome.git
+git clone https://github.com/your-username/project-rhizome.git
 
 ```
 
@@ -44,6 +44,7 @@ Project Rhizome is a chatbot application that uses Google's Gemini API to genera
    ```
 
    ```
+
 3. Create a `.env.local` file at the root of the project and add your Gemini API key:
 
    ```
@@ -53,11 +54,13 @@ Project Rhizome is a chatbot application that uses Google's Gemini API to genera
    ```
 
    ```
+
 4. Start the development server:
 
    ```
    npm run dev
    ```
+
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
 ## Usage

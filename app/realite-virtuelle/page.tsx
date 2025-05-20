@@ -1,7 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState } from "react"; 
+
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 
@@ -99,7 +100,7 @@ const EcoVRPage = () => {
                                     height={500}
                                 />
                             </div>
-                            <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
+                            {/* <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                                 <Image
                                     src="/images/eco3.png"
                                     alt="Habitat restauré"
@@ -116,7 +117,7 @@ const EcoVRPage = () => {
                                     width={500}
                                     height={500}
                                 />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="w-full lg:w-3/4 mx-auto rounded-xl overflow-hidden shadow-2xl mb-10">
                             <video controls className="w-full aspect-video">

@@ -18,6 +18,13 @@
         --background-end-rgb: 0, 0, 0;
     }
 }
+@media (prefers-color-scheme: light) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
 
 @layer utilities {
     .text-balance {
@@ -58,6 +65,28 @@
     --radius: 0.5rem;
 }
 .dark {
+    --background: 147 10% 10%;
+    --foreground: 147 0% 90%;
+    --card: 147 0% 10%;
+    --card-foreground: 147 0% 90%;
+    --popover: 147 10% 5%;
+    --popover-foreground: 147 0% 90%;
+    --primary: 147 93.1% 28.4%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 147 10% 20%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 109 10% 25%;
+    --muted-foreground: 147 0% 65%;
+    --accent: 109 10% 25%;
+    --accent-foreground: 147 0% 90%;
+    --destructive: 0 50% 50%;
+    --destructive-foreground: 147 0% 90%;
+    --border: 147 20% 50%;
+    --input: 147 20% 50%;
+    --ring: 147 93.1% 28.4%;
+    --radius: 0.5rem;
+}
+.light {
     --background: 147 10% 10%;
     --foreground: 147 0% 90%;
     --card: 147 0% 10%;
