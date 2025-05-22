@@ -86,7 +86,7 @@ export function Hero() {
                         <div className="w-full lg:w-2/4 mx-auto rounded-xl overflow-hidden shadow-2xl mb-10">
                             <video controls className="w-full aspect-video">
                                 <source
-                                    src="/videos/eco_video.mp4"
+                                    src="https://www.youtube.com/watch?v=WuFgRM8iTQ4"
                                     type="video/mp4"
                                 />
                                 Votre navigateur ne supporte pas les vidéos
