@@ -18,15 +18,11 @@ export function Hero() {
 
                 <div className="max-w-4xl mt-10 lg:mt-0">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold pb-6 leading-tight">
-                        Dialoguez avec un messager du futur
+                        Dialoguez avec Jean
                     </h2>
                     <p className="text-lg md:text-xl lg:text-2xl pb-10 leading-relaxed">
-                        Plongez dans une expérience immersive où une
-                        intelligence venue d&apos;un futur apocalyptique vous
-                        révèle les conséquences de nos actions actuelles. Ce
-                        témoin des temps futurs partage des insights saisissants
-                        et des solutions concrètes pour réécrire notre destin
-                        collectif.
+                        Plongez dans une expérience immersive où un humain, Jean, venu de l&apos;année 2125, vous révèles les conséquences du dérèglement climatique. 
+                        Cet habitant du futur partage des faits saisissants de notre monde devenu apocalyptique et des solutions concrètes pour réécrire notre destin collectif.
                     </p>
                     <div className="flex justify-start">
                         <div className="group border-2 border-white p-1 hover:bg-white transition duration-300">
@@ -58,10 +54,10 @@ export function Hero() {
                         Apprenez en jouant, agissez pour la planète
                     </h2>
                     <p className="text-lg md:text-xl lg:text-2xl pb-10 leading-relaxed">
-                        Dans le jeu, vous vivrez une expérience unique à travers différents niveaux éducatifs. 
-                        Vous apprendrez notamment à nettoyer les plages en ramassant les déchets et à protéger les forêts en luttant contre la déforestation. 
-                        Ces missions interactives vous montreront concrètement l&apos;importance de ces gestes pour préserver notre environnement. 
-                        Une façon immersive et engageante de comprendre les enjeux écologiques tout en passant un bon moment !
+                        Dans le jeu, vous vivrez une expérience immersive à travers différents niveaux éducatifs. 
+                        Vous apprendrez notamment à nettoyer les plages en ramassant les déchets et à protéger les écosystèmes marins. 
+                        Ces missions interactives vous montreront concrètement l&apos;impact positif de ces actions sur l&apos;environnement. 
+                        Une façon ludique et engageante de comprendre l&apos;importance de préserver nos océans tout en vivant une aventure captivante en réalité virtuelle !
                     </p>
                     <div className="flex justify-start">
                         <div className="group border-2 border-white p-1 hover:bg-white transition duration-300">
@@ -69,7 +65,7 @@ export function Hero() {
                                 href="/realite-virtuelle"
                                 className="block border-2 border-white text-white px-6 py-3 text-lg group-hover:text-black group-hover:border-black text-center font-medium"
                             >
-                                Télécharger l&apos;expérience
+                                Découvrir le jeu
                             </a>
                         </div>
                     </div>
