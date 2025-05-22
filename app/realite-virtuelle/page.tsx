@@ -81,8 +81,7 @@ const EcoVRPage = () => {
 
                     {/* Media Gallery */}
                     <div className="mb-16">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
-                            <div className="flex justify-center mt-12">
+                            <div className="py-6 flex justify-center mt-12">
                                 <button 
                                     onClick={handleDownloadClick}
                                     className="relative overflow-hidden group bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white px-10 py-5 rounded-full text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
@@ -96,6 +95,7 @@ const EcoVRPage = () => {
                                     <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>
                                 </button>
                             </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
                             <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                                 <Image
                                     src="/images/vue_mer.png"
@@ -134,14 +134,14 @@ const EcoVRPage = () => {
                             </div> */}
                         </div>
                         <div className="w-full lg:w-3/4 mx-auto rounded-xl overflow-hidden shadow-2xl mb-10">
-                            <video controls className="w-full aspect-video">
-                                <source
-                                    src="/videos/eco_video.mp4"
-                                    type="video/mp4"
-                                />
-                                Votre navigateur ne supporte pas les vidéos
-                                HTML5.
-                            </video>
+                            <iframe
+                                className="w-full aspect-video"
+                                src="https://www.youtube.com/embed/GabLdI8yhMc"
+                                title="Présentation du projet"
+                                style={{ border: "0" }}
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
                         </div>
                         
                         {/* Bouton de téléchargement amélioré */}

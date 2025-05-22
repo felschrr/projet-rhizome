@@ -83,15 +83,15 @@ export function Hero() {
                         sensibilisation climatique en une expérience immersive et
                         engageante.
                     </p>
-                        <div className="w-full lg:w-2/4 mx-auto rounded-xl overflow-hidden shadow-2xl mb-10">
-                            <video controls className="w-full aspect-video">
-                                <source
-                                    src="https://www.youtube.com/watch?v=WuFgRM8iTQ4"
-                                    type="video/mp4"
-                                />
-                                Votre navigateur ne supporte pas les vidéos
-                                HTML5.
-                            </video>
+                        <div className="w-full lg:w-3/4 mx-auto rounded-xl overflow-hidden shadow-2xl mb-10">
+                            <iframe
+                                className="w-full aspect-video"
+                                src="https://www.youtube.com/embed/WuFgRM8iTQ4"
+                                title="Présentation du projet"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
                         </div>
                 </div>
             </section>
