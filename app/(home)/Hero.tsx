@@ -5,17 +5,7 @@ export function Hero() {
     return (
         <div className="max-w-screen-2xl mx-auto">
             {/* Section Hero */}
-            <section className="min-h-screen flex flex-col justify-between px-4 sm:px-6 py-10 lg:p-20 relative overflow-hidden">
-                <div className="flex justify-start">
-                    <Image
-                        src="/images/Logohero.png"
-                        alt="Logo"
-                        className="w-32 md:w-48 lg:w-64 xl:w-80 h-auto"
-                        width={200}
-                        height={200}
-                    />
-                </div>
-
+            <section className="min-h-screen flex flex-col justify-center px-4 sm:px-6 py-10 lg:p-20 relative overflow-hidden ">
                 <div className="max-w-4xl mt-10 lg:mt-0">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold pb-6 leading-tight">
                         Dialoguez avec Jean
@@ -78,10 +68,8 @@ export function Hero() {
                         Découvrez notre projet
                     </h2>
                     <p className="text-lg md:text-xl lg:text-2xl pb-10 leading-relaxed">
-                        Plongez dans notre projet à travers cette vidéo
-                        captivante. Découvrez comment nous transformons la
-                        sensibilisation climatique en une expérience immersive et
-                        engageante.
+                        Découvrez notre projet raconté par nous-mêmes au sein de cette émission tournée sur le plateau de la WebTV de l&apos;iUT Nord Franche-Comté 
+                        et comment nous utilisons notre expérience immersive pour sensibiliser à l&apos;écologie. 
                     </p>
                         <div className="w-full lg:w-3/4 mx-auto rounded-xl overflow-hidden shadow-2xl mb-10">
                             <iframe

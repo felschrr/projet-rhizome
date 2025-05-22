@@ -49,7 +49,7 @@ const EcoVRPage = () => {
                             </p>
                             <div className="flex justify-center">
                                 <a 
-                                    href="https://drive.google.com/file/d/1t4AUZ8zugastqe_l8qJbD_Q9AJSqzBRE/view"
+                                    href="https://drive.usercontent.google.com/download?id=1t4AUZ8zugastqe_l8qJbD_Q9AJSqzBRE&export=download&authuser=0"
                                     className="bg-white text-black px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition flex items-center gap-2"
                                     onClick={closePopup}
                                 >
@@ -68,7 +68,7 @@ const EcoVRPage = () => {
                         L&apos;Avenir Écologique Entre Vos Mains
                     </h2>
                     <p className="text-xl md:text-2xl lg:text-2xl mb-10 leading-relaxed max-w-4xl">
-                        ECOCALYPSE Plongez dans une expérience immersive qui
+                        Plongez dans une expérience immersive qui
                         mêle réalité virtuelle et intelligence artificielle pour
                         sensibiliser au dérèglement climatique. Dans ECOCALYPSE,
                         vous devrez ramasser des déchets, sauver des animaux et
@@ -114,10 +114,10 @@ const EcoVRPage = () => {
                                     height={500}
                                 />
                             </div>
-                            {/* <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
+                            <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                                 <Image
-                                    src="/images/eco3.png"
-                                    alt="Habitat restauré"
+                                    src="/images/vue_tabl.png"
+                                    alt="Vue du tableau de bord de résultats"
                                     className="size-full object-cover"
                                     width={500}
                                     height={500}
@@ -125,13 +125,13 @@ const EcoVRPage = () => {
                             </div>
                             <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
                                 <Image
-                                    src="/images/eco4.png"
-                                    alt="Interaction avec l'IA"
+                                    src="/images/vue_jeu.png"
+                                    alt="Vue du jeu"
                                     className="size-full object-cover"
                                     width={500}
                                     height={500}
                                 />
-                            </div> */}
+                            </div>
                         </div>
                         <div className="w-full lg:w-3/4 mx-auto rounded-xl overflow-hidden shadow-2xl mb-10">
                             <iframe
