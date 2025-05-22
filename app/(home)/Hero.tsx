@@ -55,15 +55,13 @@ export function Hero() {
             <section className="min-h-screen px-4 sm:px-6 lg:px-20 py-20 flex flex-col justify-center bg-black bg-opacity-/50 relative">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold pb-6 leading-tight">
-                        Expérimentez l&apos;impact climatique
+                        Apprenez en jouant, agissez pour la planète
                     </h2>
                     <p className="text-lg md:text-xl lg:text-2xl pb-10 leading-relaxed">
-                        Notre simulation interactive vous place au cœur
-                        d&apos;événements climatiques extrêmes. Ressentez la
-                        puissance dévastatrice des inondations, la violence des
-                        ouragans et l&apos;ampleur des sécheresses - une
-                        expérience immersive qui transforme les statistiques en
-                        prise de conscience tangible.
+                        Dans le jeu, vous vivrez une expérience unique à travers différents niveaux éducatifs. 
+                        Vous apprendrez notamment à nettoyer les plages en ramassant les déchets et à protéger les forêts en luttant contre la déforestation. 
+                        Ces missions interactives vous montreront concrètement l&apos;importance de ces gestes pour préserver notre environnement. 
+                        Une façon immersive et engageante de comprendre les enjeux écologiques tout en passant un bon moment !
                     </p>
                     <div className="flex justify-start">
                         <div className="group border-2 border-white p-1 hover:bg-white transition duration-300">

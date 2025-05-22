@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/custom/theme-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Projet Rhizome",
+    title: "ECOCALYPSE",
     description: "Chatbot intelligent sur le climat et l'environnement avec un jeu immersif en VR.",
     icons: {
         icon: "/images/Logo.png",
@@ -15,10 +15,10 @@ export const metadata: Metadata = {
         apple: "/images/Logo.png",
     },
     openGraph: {
-        title: "Projet Rhizome",
+        title: "ECOCALYPSE",
         description: "Chatbot intelligent sur le climat et l'environnement avec un jeu immersif en VR.",
         url: "https://projet-rhizome.vercel.app/",
-        siteName: "Projet Rhizome",
+        siteName: "ECOCALYPSE",
         images: [
             {
                 url: "/images/Logo.png",

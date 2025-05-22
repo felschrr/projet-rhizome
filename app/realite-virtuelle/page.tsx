@@ -165,14 +165,7 @@ const EcoVRPage = () => {
                                     À propos du jeu
                                 </h4>
                                 <p className="text-lg md:text-xl leading-relaxed">
-                                    ECOCALYPSE est une aventure immersive
-                                    révolutionnaire qui fusionne réalité
-                                    virtuelle et intelligence artificielle pour
-                                    créer une expérience éducative inoubliable.
-                                    Explorez différents scénarios climatiques
-                                    extrêmes, prenez des décisions cruciales et
-                                    découvrez en temps réel les conséquences de
-                                    vos choix sur l&apos;environnement virtuel.
+                                    ECOCALYPSE est une expérience immersive mêlant réalité virtuelle et intelligence artificielle, où chaque décision compte pour sauver un monde en crise écologique. Découvrez un avenir marqué par le dérèglement climatique et engagez-vous dans une quête interactive pour changer le cours des choses.
                                 </p>
                             </div>
 
@@ -192,34 +185,33 @@ const EcoVRPage = () => {
                                     <li className="flex items-start">
                                         <span className="mr-3">•</span>
                                         <span>
-                                            Secourir des espèces animales en
-                                            danger et reconstituer leurs
-                                            habitats naturels
+                                            Ramasser et recycler des déchets dans des environnements pollués
                                         </span>
                                     </li>
                                     <li className="flex items-start">
                                         <span className="mr-3">•</span>
                                         <span>
-                                            Dialoguer avec une IA futuriste pour
-                                            comprendre les enjeux climatiques et
-                                            découvrir des solutions innovantes
+                                            Sauver des animaux menacés et restaurer leurs habitats
                                         </span>
                                     </li>
                                     <li className="flex items-start">
                                         <span className="mr-3">•</span>
                                         <span>
-                                            Assister à la transformation
-                                            progressive des écosystèmes sous
-                                            l&apos;effet de vos actions
-                                            positives
+                                            Échanger avec un chatbot éducatif venu d’un futur dystopique pour apprendre à agir concrètement
+                                        </span>
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="mr-3">•</span>
+                                        <span>
+                                            Observer vos efforts transformer la planète et rendre l’espoir à la nature
                                         </span>
                                     </li>
                                 </ul>
                             </div>
 
                             <div>
-                                <h4 className="text-2xl md:text-3xl font-bold mb-4">
-                                    Fonctionnalités clés :
+                                <h4 className="text-2xl md:text-3xl font-bold mb-4">      
+                                    Caractéristiques principales :
                                 </h4>
                                 <ul className="space-y-3 text-lg md:text-xl">
                                     <li className="flex items-start">
@@ -228,30 +220,16 @@ const EcoVRPage = () => {
                                             <strong>
                                                 Réalité virtuelle immersive
                                             </strong>{" "}
-                                            : Parcourez des environnements 3D
-                                            ultra-réalistes montrant les impacts
-                                            du changement climatique
+                                            : Explorez des décors 3D hyper réalistes qui illustrent les dégâts du dérèglement climatique
                                         </span>
                                     </li>
                                     <li className="flex items-start">
                                         <span className="mr-3">•</span>
                                         <span>
                                             <strong>
-                                                IA conversationnelle avancée
+                                                Gameplay stimulant et gratifiant 
                                             </strong>{" "}
-                                            : Échangez avec un guide virtuel
-                                            doté de connaissances approfondies
-                                            sur l&apos;écologie
-                                        </span>
-                                    </li>
-                                    <li className="flex items-start">
-                                        <span className="mr-3">•</span>
-                                        <span>
-                                            <strong>
-                                                Mécaniques de jeu engageantes
-                                            </strong>{" "}
-                                            : Résolvez des énigmes écologiques
-                                            et débloquez des zones restaurées
+                                            : Résolvez des défis écologiques et voyez vos actions restaurer la vie
                                         </span>
                                     </li>
                                     <li className="flex items-start">
@@ -268,11 +246,9 @@ const EcoVRPage = () => {
                                         <span className="mr-3">•</span>
                                         <span>
                                             <strong>
-                                                Contenu éducatif validé
+                                                Un message d’espoir
                                             </strong>{" "}
-                                            : Des informations scientifiques
-                                            précises intégrées naturellement
-                                            dans le gameplay
+                                            : Apprenez comment chaque petit geste compte pour protéger notre avenir commun
                                         </span>
                                     </li>
                                 </ul>
