@@ -49,7 +49,7 @@ const EcoVRPage = () => {
                             </p>
                             <div className="flex justify-center">
                                 <a 
-                                    href="/lien-de-telechargement"
+                                    href="https://drive.google.com/file/d/1t4AUZ8zugastqe_l8qJbD_Q9AJSqzBRE/view"
                                     className="bg-white text-black px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition flex items-center gap-2"
                                     onClick={closePopup}
                                 >
