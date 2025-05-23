@@ -10,9 +10,9 @@ export const metadata: Metadata = {
     title: "ECOCALYPSE",
     description: "Chatbot intelligent sur le climat et l'environnement avec un jeu immersif en VR.",
     icons: {
-        icon: "/images/Logo.png",
-        shortcut: "/images/Logo.png",
-        apple: "/images/Logo.png",
+        icon: "/images/Logo.svg",
+        shortcut: "/images/Logo.svg",
+        apple: "/images/Logo.svg",
     },
     openGraph: {
         title: "ECOCALYPSE",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         siteName: "ECOCALYPSE",
         images: [
             {
-                url: "/images/Logo.png",
+                url: "/images/Logo.svg",
                 width: 800,
                 height: 600,
             },
